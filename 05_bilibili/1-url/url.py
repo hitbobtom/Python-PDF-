@@ -119,6 +119,6 @@ if __name__ == "__main__":
 
     input_path = os.path.join(pathPrefix, "input.txt")
     output_path = os.path.join(pathPrefix, "output.txt")
-    md_path = r'C:\Users\qtf\Desktop\04_code\python\python-pdf\README.md'
+    md_path = os.path.join(pathPrefix, "URL.md")
 
     add_url(baseUrl, input_path, output_path, md_path)
