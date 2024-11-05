@@ -1,0 +1,1566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="app-id=836485862" name="apple-itunes-app">
+    <meta content="webkit|ie-stand|ie-comp" name="renderer"/>
+    <meta content="IE=edge; IE=11; IE=10; IE=9; IE=8" http-equiv="X-UA-Compatible"/>
+    <meta content="no-transform" http-equiv="Cache-Control"/>
+    <meta content="telephone=no" name="format-detection">
+    <meta content="活跃的碧蓝航线主题论坛,资讯/攻略/即时交流" name="description"/>
+    <meta content="碧蓝航线" name="keywords"/>
+    <title>碧蓝航线 NGA玩家社区</title>
+    <script type="text/javascript">
+        //loadscriptstart
+        var __CURRENT_UID = parseInt('61178806', 10),
+            __NOW = 1696813394,
+            __CURRENT_UNAME = 'lqy浮生若梦',
+            __CACHE_PATH = './data/bbscache',
+            __MISC_COOKIE_NAME = 'bbsmisccookies',
+            __CHARSET = 'GBK'
+
+        __CURRENT_GFID = 564
+        __CURRENT_FID = 564
+
+        var __GP = {
+            _b: {//C::_GB~
+                admin: 1,
+                'super': 2,
+                greater: 4,
+                superlesser: 8,
+                lesser: 16,
+                normal: 32,
+                topic: 64,
+                reply: 128,
+                vote: 256,
+                comment: 512,
+                search: 524288,
+                voteBet: 1048576,
+                staff: 2097152,
+                secact: 33554432,
+                secview: 8388608,
+                secviews: 16777216,
+                ubStaff: 2097152,
+                ubSecAct: 33554432,
+                ubSecView: 8388608,
+                ubSecViewS: 16777216
+            },
+            _ub: {//C::_UB~
+                ubMod: 4,
+                ubExA: 128,
+                ubExASucc: 256
+            },
+            _n: null,
+            init: function (gbit, adck, rvrc, act, ubit, llog) {
+                this._n = {
+                    _bit: gbit,
+                    admincheck: adck,
+                    rvrc: rvrc,
+                    active: act,
+                    userBit: ubit
+                }
+                this.loginlog = llog
+                for (var k in this._n) {
+                    this[k] = this._n[k] | 0
+                    if (!this[k]) this[k] = 0
+                }
+                for (var k in this._b)
+                    this[k] = this._b[k] & this._bit ? 1 : 0
+                for (var k in this._ub)
+                    this[k] = this._ub[k] & this.userBit ? 1 : 0
+            }
+        }//ce
+
+        __GP.init('622816', '0', '10', '4', '135536640', '')
+        //loadscriptend
+        var _NotLoad178NavAll = 1,
+            ngaAds = []
+        ngaAds.location = location
+
+        var __IMG_BASE = 'http://img4.nga.178.com',
+            __IMGPATH = 'http://img4.nga.178.com/ngabbs',
+            __IMG_STYLE = 'http://img4.nga.178.com/ngabbs/nga_classic',
+            __COMMONRES_PATH = 'http://img4.nga.178.com/common_res',
+            __BBSURL = location.protocol + '//bbs.nga.cn',
+            __CKDOMAIN = 'bbs.nga.cn',
+            __LASTDOMAIN = '',
+            __ATTACH_BASE = 'https://img8.nga.cn',
+            __ATTACH_BASE_UPLOAD = 'img8.nga.cn',
+            __ATTACH_BASE_UPLOAD_SEC = 'img8.nga.cn',
+            __ATTACH_BASE_VIEW = 'img.nga.178.com',
+            __ATTACH_BASE_VIEW_SEC = 'img.nga.178.com',
+            __RES_BASE = 'img4.nga.178.com',
+            __RES_BASE_SEC = 'img4.nga.178.com',
+            __DSBASE = 'http://g1.tagtic.cn/v1/xingyou/c'
+        if (location.protocol == 'https:') {
+            ;(function () {
+                var i = 0, a = arguments
+                for (; i < a.length; i++)
+                    this[a[i]] = this[a[i]].replace(/^https?:\/\/[^\/]+/, 'https://img4.nga.178.com')
+            })('__IMG_BASE', '__IMGPATH', '__IMG_STYLE', '__COMMONRES_PATH');
+            __DSBASE = __DSBASE.replace(/^http:/, 'https:')
+        }
+        var __STYLE = [
+
+                ["default", __IMG_STYLE + "/css_default.css?7892838", __IMG_STYLE + "/js_color.js?7892838"]
+                , ["teal", __IMG_STYLE + "/css_default1.css?7892838", __IMG_STYLE + "/js_color1.js?7892838"]
+                , ["purp", __IMG_STYLE + "/css_default2.css?7892838", __IMG_STYLE + "/js_color2.js?7892838"]
+                , ["dark", __IMG_STYLE + "/css_default3.css?7892838", __IMG_STYLE + "/js_color3.js?7892838"]
+
+            ],
+            __SCRIPTS = {
+
+                "lib": __COMMONRES_PATH + "/js_commonLib.js?120870"
+                , "common": __COMMONRES_PATH + "/js_commonui.js?5871265"
+                , "forum": __COMMONRES_PATH + "/js_forum.js?3046633"
+                , "commonSpec": __IMG_STYLE + "/js_default.js?9964960"
+                , "bbscode": __COMMONRES_PATH + "/js_bbscode_core.js?1342371"
+                , "bbscodeSpec": __IMG_STYLE + "/js_bbscode_smiles.js?2966391"
+                , "post": __COMMONRES_PATH + "/js_postfunc_v2.js?3046636"
+                , "mainMenu": __COMMONRES_PATH + "/js_mainMenu.js?110864"
+                , "customBg": __IMG_STYLE + "/js_customBg.js?111116"
+                , "dsList": __IMG_STYLE + "/js_dslist_default.js?1204856"
+                , "dsCommon": __COMMONRES_PATH + "/js_dscommon.js?1204489"
+                , "dsid_bbs_ads24": __DSBASE + "/715.js?"
+                , "dsid_bbs_ads22": __DSBASE + "/718.js?"
+                , "dsid_bbs_ads12": __DSBASE + "/778.js?"
+                , "dsid_bbs_ads1": __DSBASE + "/714.js?"
+                , "combine": __IMG_BASE + "/proxy/cache_attach/js_combine_data.js?" + Math.floor(__NOW / 300)
+                , "dsid_bbs_ads44": __DSBASE + "/6001.js?"
+                , "dsid_bbs_ads45": __DSBASE + "/6002.js?"
+                , "dsid_bbs_ads46": __DSBASE + "/200810.js?"
+                , "dsid_bbs_ads47": __DSBASE + "/200811.js?"
+                , "dsid_bbs_ads49": __DSBASE + "/200809.js?"
+                , "dsid_bbs_ads50": __DSBASE + "/200808.js?"
+                , "dsid_bbs_ads51": __DSBASE + "/200807.js?"
+                , "notification": __COMMONRES_PATH + "/js_notification.js?8605178"
+                , "md5": __COMMONRES_PATH + "/js_md5.js?140335"
+                , "admin": __COMMONRES_PATH + "/js_admin.js?8605175"
+                , "d3ItemSelect": __COMMONRES_PATH + "/js_d3_item_select.js?120649"
+                , "iframeRead2": __COMMONRES_PATH + "/js_iframeRead.js?130145"
+                , "loaderRead": __COMMONRES_PATH + "/js_box.js?8605173"
+                , "userItem": __COMMONRES_PATH + "/js_userItem.js?131056"
+                , "highlighter": __COMMONRES_PATH + "/js_highlighter.js?140332"
+                , "armory": __IMG_STYLE + "/js_armory.js?120685"
+                , "read": __COMMONRES_PATH + "/js_read.js?3587911"
+                , "message": __COMMONRES_PATH + "/js_message.js?121095"
+                , "userScript": __IMG_STYLE + "/js_userScript.js?131026"
+                , "quoteTo": __COMMONRES_PATH + "/js_quote_to.js?432463"
+                , "ucp": __COMMONRES_PATH + "/js_ucp.js?121168"
+                , "imgEdit": __COMMONRES_PATH + "/js_imageEdit.js?121024"
+                , "bbscodeMd": __COMMONRES_PATH + "/js_bbscode_md.js?120439"
+                , "ubbeditor": __COMMONRES_PATH + "/ubbeditor_v2/index.html?v=1.07"
+                , "service": "/js_service.js?778546"
+                , "jsDebug": "http://127.0.0.1/jsDebug.js?"
+                , "stat": "https://bdtj.tagtic.cn/bi-sdk.1.2.1.js?635574"
+                , "dsCommonG": "https://g1.tagtic.cn/g.js?"
+
+                , rand: 637858
+            }
+        ;(function () {
+            var T = __SCRIPTS, ev, h, tor = function (f) {
+                setTimeout(f)
+            }
+            T.lg = {}
+            T.loading = 0
+            T.lo = {}
+            T.cl = []
+            T.load = function (s, f, c, y) {
+                var x = (!(y & 1) || !h) ? document.createElement('script') : ''
+                if (!h) {
+                    ev = ('readyState' in x) ? 'onreadystatechange' : 'onload'
+                    h = document.getElementsByTagName('head')[0]
+                }
+                if (s.charAt(0) == '/' || s.substr(0, 4) == 'http') {
+                    var k = 's_' + Math.random()
+                    this[k] = s
+                    s = k
+                } else if (!this[s] || this.src(s))
+                    return
+                if (f) this.cl[s] = f
+                if ((y & 2) == 0) {
+                    this.loading++
+                    this.lg[this[s]] = (this.lg[this[s]] | 0) + 1
+                }
+                if (y & 1)
+                    document.write('<script src="' + this[s] + '" type="text/javascr' + 'ipt" ' + ev + '="__SCRIPTS.ol(this,\'' + s + '\')" onerror="__SCRIPTS.oe(this,event)" ' + (c ? 'charset="' + c + '"' : '') + '></scr' + 'ipt>')
+                else {
+                    x.src = this[s]
+                    x.type = 'text/javascript'
+                    if (c) x.charset = c
+                    x[ev] = function () {
+                        __SCRIPTS.ol(this, s)
+                    }
+                    x.onerror = function (e) {
+                        __SCRIPTS.oe(this, e)
+                    }
+                    h.insertBefore(x, h.firstChild)
+                }
+            }//
+            T.src = function (s) {
+            }//
+            T.asyncLoad = function () {
+                var a = arguments, x = a.length, y
+                if (typeof a[x - 1] == 'number') y = a[--x]
+                for (var i = 0; i < x; i++) {
+                    if (a[i]) {
+                        this.load(a[i], typeof a[i + 1] == 'function' ? a[++i] : 0, 0, y)
+                    }
+                }
+            }//
+            T.el = function (e) {
+                console.log(e)
+            }//
+            T.syncLoad = function () {
+                var a = arguments;
+                a[a.length] = (a[a.length] | 0) | 1;
+                a.length++;
+                T.asyncLoad.apply(this, a)
+            }//
+            T.oe = function (o, e) {
+                this.el(o.src + ' load error');
+                if (this.loading > 0) {
+                    this.loading--
+                    //this.lg[o.src]--
+                }
+            }//
+            T.ol = function (o, n) {
+                if (ev != 'onload') {
+                    var r = o.readyState
+                    if (r && r != 'loaded' && r != 'complete') return
+                }
+                this.lo[n] = 1
+                if (this.loading > 0) {
+                    this.loading--
+                    this.lg[o.src]--
+                }
+                if (this.cl[n]) tor(this.cl[n])
+                if (this.loading < 1) {
+                    while (this.cl.length) tor(this.cl.shift())
+                }
+            }//
+            T.wload = function (f) {
+                if (this.loading < 1) return f();
+                this.cl.push(f)
+            }//
+        })();
+
+
+    </script>
+    <script type="text/javascript">
+        var tmp = 0
+        tmp |= (__GP.lesser || __GP.ubMod) ? 1 : 0
+        tmp |= 2//(window.__DEBUG || (window.__CURRENT_UID&3)==3)?2:0
+        if (tmp && window.localStorage)
+            ngaAds.wait = []
+        __SCRIPTS.syncLoad('lib', 'dsList', 'combine', 'dsCommon', 'md5', 'common', 'forum', (tmp & 1) ? 'admin' : '', (tmp & 3) ? 'loaderRead' : '', (tmp & 3) ? function () {
+            commonui.aE(window, 'bodyInit', function () {
+                _LOADERREAD.init()
+            })
+        } : '')
+    </script>
+    <script type="text/javascript">
+        __COOKIE.init(__CKDOMAIN, '/', 'bbsmisccookies')
+        __SETTING.init(0)
+    </script>
+    <script type="text/javascript">
+        __SCRIPTS.syncLoad('commonSpec', 'bbscode', 'bbscodeSpec', 'mainMenu', 'customBg', 'post')
+    </script>
+    <script type="text/javascript"></script>
+    </meta></meta></head>
+<body>
+<div class="clear minWidthSpacer" id="minWidthSpacer"></div>
+<div id="mmc">
+    <script type="text/javascript">
+        commonui.ifuserscript()
+        commonui.initAfterBody()
+    </script>
+    <div id="mc">
+        <div id="mainmenu"></div>
+        <script type="text/javascript">commonui.mainMenu.init(__CURRENT_UNAME, '', '', '', __CURRENT_UID);</script>
+        <div class="module_wrap" id="m_nav">
+            <div class="nav"><a class="nav_root" href="/">NGA玩家社区</a><span class="nav_spr">»</span><a class="nav_link"
+                                                                                                      data-fb="167772480"
+                                                                                                      href="/thread.php?fid=428">手机
+                网页游戏综合讨论</a><span class="nav_spr">»</span>
+                <h1><a class="nav_link" data-fb="167772360" href="/thread.php?fid=564">碧蓝航线</a></h1>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            commonui.advNav($('m_nav'))
+
+            __CURRENT_FID = '564' | 0
+            __CURRENT_F_BIT = '167772360' | 0
+            __CURRENT_F_ALLOWPOST = '+u1,+w,+r109_-500'
+            __CURRENT_F_MODS = ',37864429,38364109,13101915,41526727,34800395,13313282,5252275,34003670,1698738176t,13313282,1696833536t,36337789,1696833536t,27010945,1698738176t,9014946,1698738176t,42705611,1696833536t,61444342,1698738176t,63681763,1696833536t,63146818,1696833536t,21175563,1698033664t,7116974,1700556800t,63207291,1698430976t,21175563,1698430976t,42320837,1698430976t,37496265,1698430976t,38504661,1698471936t,60252908,1698471936t,0,'
+            __ALL_FORUM_DATA = {
+                '564': [564, '碧蓝航线', '', 0, 64 | 4 | 2],
+                '746': ['746', '皇家茶会', '', '23080031', '4654' | 0],
+                '745': ['745', '港区问询处', '', '23079966', '4654' | 0],
+                't13749795': ['13749795', '前方电报', '', '13749795', '542' | 0],
+                't11709914': ['11709914', '大舰队招募 (禁止宣传QQ/微信群)', '', '11709914', '542' | 0],
+                't18337690': ['18337690', '碧蓝航线Crosswave', '', '18337690', '542' | 0]
+            }
+            __ALL_SET_DATA = {}
+            __SELECTED_FORUM = ''
+            __SELECTED_FORUM_ADD = ''
+            __SELECTED_SET = ''
+            __SUB_AND_UNION_FORUM_AND_SET = ' 746,745,t13749795,t11709914,t18337690'
+            if (!__SELECTED_FORUM) __SELECTED_FORUM = __CURRENT_FID + ''
+            __CURRENT_ORDER = ''
+
+            __TOPIC_KEY_COLOR = {"[谢谢茄子]": {0: 922216, 1: 6}, "[舰娘萌战]": {0: 943223, 1: 5}}
+        </script>
+        <script type="text/javascript">//everyload
+
+        __CURRENT_PAGE = '1' | 0
+        commonui.addForumViewHis('碧蓝航线', __CURRENT_FID, '', window.__CURRENT_STID, __CURRENT_PAGE)
+
+        </script>
+        <div class="module_wrap" id="m_pbtntop">
+            <div class="w100">
+                <div class="right_"><a href="/post.php?fid=564" name="forumBtnScript"
+                                       onclick="if(window.postfunc &amp;&amp; postfunc.addForumSelect)return postfunc.addForumSelect(event)">发表新贴</a>
+                    <script type="text/javascript">commonui.forumBtns.load(document.getElementsByName('forumBtnScript')[0].parentNode, 1, __CURRENT_FID)</script>
+                </div>
+                <div class="left" id="pagebtop" name="pageball"><a class="pager_spacer"
+                                                                   href="/thread.php?fid=564&amp;page=2" title="下一页">下一页(2)</a><span
+                        class="x" id="pageBtnHere"></span>
+                    <script>var __PAGE = {0: '/thread.php?fid=564', 1: 7511, 2: 1, 3: 20};
+                    commonui.pageBtn(document.getElementById('pageBtnHere').parentNode, __PAGE, true)</script>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="module_wrap" id="m_threads">
+            <div class="w100">
+                <div class="forumbox" id="toptopics">
+                    <div class="contentBlock"><h3><a class="block_txt block_txt_c0"
+                                                     href="/thread.php?fid=564"> 碧蓝航线 </a> <a
+                            href="/read.php?tid=13746758">极地风暴 · 665[版头V3.0]</a></h3><br/>
+                        <span class="postrow"><span class="c2 postcontent ubbcode" id="toppedtopic">[collapse=新人必读]<br/>[align=center][size=180%]&amp;#9813;[b]欢迎来到NGA[color=skyblue]碧蓝航线[/color]专版！[/b]&amp;#9813;[/size]<br/>[size=120%]新人提问请到[url=/thread.php?stid=13260281][color=purple][b]问答区[/b][/color][/url]发帖，舰队招募请到[url=/thread.php?stid=11709914][color=green][b]招募区[/b][/color][/url]发帖，各服的新闻发布请到[url=/thread.php?stid=13749795][color=blue][b]电报区[/b][/color][/url]，杂谈闲聊请到[url=/thread.php?stid=14322576][color=deeppink][b]茶会区[/b][/color][/url]，建议抱怨反馈灌水请到[url=/read.php?tid=30087906&amp;page=1#pid313128365Anchor][b][color=orangered]水楼[/color][/b][/url]，发帖前请阅读[url=/read.php?tid=11802646][color=red][b]本版版规[/b][/color][/url]！[/size]<br/>[size=120%][b][color=red]NGA非官方交流群[/color]：860636635(安卓)、689319412(IOS)[/b][/size][/align]<br/>[/collapse]<br/>[table]<br/>[tr]<br/>[td20][align=center][size=120%]&amp;#9813;[b][color=purple]正在进行中的活动[/color][/b]&amp;#9813;[/size]<br/>[align=center][/align]<br/>[url=/read.php?tid=35731794][b][size=100%]&gt;"[color=red]极地风暴[/color]"限时活动开启！&lt;[/size][/b][/url][/align][/td]<br/>[td colspan=3 width=60][align=center][url=/thread.php?fid=560][img]./mon_201803/28/-mjkdpQ5-67pK2dT1kSdv-2q.png[/img][/url][/align][/td]<br/>[td20][align=center][url=/read.php?tid=23383923][img]./mon_201903/23/foQ5-1o2jZ2aT1kS6o-34.gif[/img][/url]<br/>[size=80%][url=/read.php?tid=11828236][color=red][b]&gt;NGA评分&lt;[/b][/color][/url][url=https://wiki.biligame.com/blhx/][color=purple][b]&gt;碧蓝WIKI&lt;[/b][/color][/url]<br/>[url=https://itunes.apple.com/cn/app/id1170457573][color=green][b]&gt;iOS下载&lt;[/b][/color][/url][url=https://pkg.biligame.com/games/blhx_6.2.1_bilibili_20221107_143634.apk][color=orangered][b]&gt;安卓下载&lt;[/b][/color][/url][/size][/align][/td][/tr]<br/>[tr]<br/>[td rowspan=2 width=20][align=center][size=120%]&amp;#9813;[b][color=purple]版内活动[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=35746454][color=red]“极地风暴”限时活动 沉船集中许愿帖[/color][/url]<br/>[url=/read.php?tid=35746467][color=red]“极地风暴”限时活动 新船集中下水帖[/color][/url][/align][/td]<br/>[td rowspan=2 width=20][align=center][size=120%]&amp;#9813;[b][color=purple]入坑指南[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=28000955][color=orangered]新人入坑攻略索引全书[/color][/url]<br/>[url=/read.php?tid=28000955][color=orangered]28法则之下的碧蓝航线精简全攻略[/color][/url]<br/>[url=/read.php?tid=27052522][color=orangered]新手入门·认识舰船，如何配队[/color][/url]<br/>[url=/read.php?tid=30399628][color=orangered]新手入门·如何最大化攫取利益[/color][/url]<br/>[url=/read.php?tid=19574497][color=orangered]舰船/装备外号黑话和梗大全[/color][/url]<br/>[/align][/td]<br/>[td rowspan=4 width=20][align=center]<br/>[randomblock][img]./mon_202007/29/foQ5-7fc7K1mT1kS5k-b3.png[/img][/randomblock]<br/>本届萌王——[color=orangered][b]可畏[/b][/color][/align][/td]<br/>[td rowspan=2 width=20][align=center][size=120%]&amp;#9813;[b][color=purple]数据资料[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=31394179][color=blue][数据]每月金菜获取相关统计数据[/color][/url]<br/>[url=/read.php?tid=33071643][color=blue][数据]五期科研掉落统计结果[/color][/url]<br/>[url=/read.php?tid=33023118][color=blue][工具]碧蓝航线工具箱[/color][/url]<br/>[url=/read.php?tid=35484779][color=blue][工具]怨仇航母队调速工具[/color][/url]<br/>[url=/read.php?tid=26284300][color=blue][剧情]《碧蓝航线剧情大百科》[/color][/url]<br/>[url=/read.php?tid=30735569][color=blue][剧情]原初世界编年史[/color][/url][url=/read.php?tid=30736332][color=blue]世界观图示[/color][/url]<br/>[pid=604151051][color=blue][合集]数据资料及实用工具汇总[/color][/pid]<br/>[/align][/td]<br/>[td rowspan=2 width=20][align=center]<br/>[size=120%]&amp;#9813;[b][color=purple]大型作战&amp;META[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=35746596][size=100%][color=blue][b]伊丽莎白女王·META阵容推荐[/b][/color][/size][/url]<br/>[url=/read.php?tid=35665014][size=100%][color=blue]伊丽莎白女王·META攻坚打法及思路解析[/color][/size][/url]<br/>[url=/read.php?tid=35579097][size=100%][color=blue]大世界队伍构筑推荐·臧贺版[/color][/size][/url][url=/read.php?tid=27210667][size=100%][color=blue]小圣版[/color][/size][/url]<br/>[url=/read.php?tid=26647533][size=100%][color=blue]大世界深渊BOSS注意事项一览[/color][/size][/url]<br/>[url=/read.php?tid=25070804][size=100%][color=blue]短猫相接简单科普及推荐地图[/color][/size][/url]<br/>[/align][/td][/tr]<br/>[tr]<br/>[/tr]<br/>[tr]<br/>[td rowspan=2 width=20][align=center][size=120%]&amp;#9813;[b][color=purple]国服公告[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=35731794][b][size=100%][color=blue]&gt;3月23日改建公告&lt;[/color][/size][/b][/url]<br/>[b]改建内容[/b]：[color=orange]极地风暴[/color]<br/>[b]改建时间[/b]：[color=orange]3月23日10:00~17:00[/color]<br/>[url=http://game.bilibili.com/blhx/][color=blue][b]国服官网[/b][/color][/url][url=https://weibo.com/azurlane?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1][color=red]官博@碧蓝航线[/color][/url][/align][h][/h]<br/>[align=center][size=120%]&amp;#9813;[b][color=purple]日服公告[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=35732685][b][size=100%][color=blue]&gt;3月23日更新日志&lt;[/color][/size][/b][/url]<br/>[b]公告内容[/b]：[color=orange]星霜海嵐[/color]<br/>[b]维护时间[/b]：[color=orange]3月23日14:00~20:00(JP)[/color]<br/>[url=http://www.azurlane.jp/][color=blue][b]日服官网[/b][/color][/url][url=https://twitter.com/azurlane_staff][color=red]官推@azurlane_staff[/color][/url]<br/>[/align][/td]<br/>[td rowspan=2 width=20][align=center][size=120%]&amp;#9813;[b][color=purple]进阶攻略[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=29865253][color=royalblue][b]出击常去关卡收益分析[/b][/color][/url]<br/>[url=/read.php?tid=31731851][color=royalblue][b]125级认知觉醒优先级推荐·高难向[/b][/color][/url]<br/>[url=/read.php?tid=29933079][color=royalblue]金坷垃都能懂的科研速通攻略[/color][/url]<br/>[url=/read.php?tid=31197275][color=royalblue][b]装备速查表暨高强化推荐表[/b][/color][/url]<br/>[url=/read.php?tid=31374206][color=royalblue]研发装备推荐一览式图表[/color][/url]<br/>[url=/read.php?tid=32273173][color=royalblue]前锋通用兵装系统深层分析[/color][/url]<br/>[url=/read.php?tid=32319375][color=royalblue]各舰种单点属性值提升收益参考[/color][/url]<br/>[pid=592704620][color=royalblue]进阶攻略及评测汇总[/color][/pid]<br/>[/align][/td]<br/>[td rowspan=2 width=20][align=center][size=120%]&amp;#9813;[b][color=purple]同人创作[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=11981649][color=sienna][合集]NGA攻略组视频索引[/color][/url]<br/>[url=/read.php?tid=19830429][color=sienna][合集]亚历山大图书馆·同人文汇总[/color][/url]<br/>[pid=592761175][color=sienna][合集]科普考据帖汇总[/color][/pid]<br/>[url=/read.php?tid=13357816][color=sienna][漫画]官方四格漫画·NGA汉化[/color][/url]<br/>[url=/read.php?tid=16423356][color=sienna][同人]碧蓝航线NGA内嵌表情包[/color][/url]<br/>[url=/read.php?tid=30391424][color=sienna][同人]pixiv检索结果排行榜[/color][/url]<br/>[url=/read.php?tid=35956771][color=sienna][同人]手工·RTX4090信浓主题化改造[/color][/url]<br/>[url=/read.php?tid=35634772][color=sienna][同人]资源·全角色自制卡牌[/color][/url]<br/>[url=/read.php?tid=32991617][color=sienna][同人]绘画·不挠&amp;埃吉尔女仆[/color][/url]<br/>[/align][/td]<br/>[td rowspan=2 width=20][align=center][size=120%]&amp;#9813;[b][color=deeppink]主线·十四章[/color][/b]&amp;#9813;[/size]<br/>[url=/read.php?tid=33736106][color=green][b]14图高配高练高稳定性构筑一览图[/b][/color][/url]<br/><br/>[/align][h][/h]<br/>[align=center][size=120%]&amp;#9813;[b][color=purple]EN服公告[/color][/b]&amp;#9813;[/size]<br/>[url=https://azurlane.yo-star.com/news/2023/03/23/maintenance-notice-3-23-12-a-m-utc-7/][b][size=100%][color=blue]&gt;3月23日更新日志&lt;[/color][/size][/b][/url]<br/>[b]公告内容[/b]：[color=orange]Frostfall[/color]<br/>[b]维护时间[/b]：[color=orange]3月23日12:00~20:00(UTC-7)[/color]<br/>[url=https://azurlane.yo-star.com/#/][color=blue][b]EN服官网[/b][/color][/url][url=https://twitter.com/AzurLane_EN][color=red]官推@AzurLane_EN[/color][/url]<br/>[/align][/td][/tr]<br/>[tr]<br/>[/tr]<br/>[/table]<span
+                                id="toptopicadd"></span><br/>========<br/>[tid=37714391][b][color=red]9.14 国服日服EN服 “须臾望月抄”限时活动 新船集中下水/晒欧帖[/color][/b][/tid] [tid=37665786][b][生放送]9.9 北京时间16时 日服六周年直播·新活动新内容 集中讨论帖[/b][/tid] [tid=20409504][b][color=red][版务公告]请勿讨论反和谐的相关话题[/color][/b][/tid] [tid=17347440][b]游戏内优化和建议(非bug/新UI)集中讨论反馈贴，单开删锁[/b][/tid] [tid=14180279][b][color=red][版务公告]画师与立绘问题的处理办法[/color][/b][/tid] [tid=13585563][b][color=red][版务公告]建议类主题即日起新开删锁[/color][/b][/tid] [tid=13334100][b][color=red]讨论游戏问题请勿涉及近现代政治(2022.7.12修改)[/color][/b][/tid] [tid=13287255][b][color=red][版务公告]碧蓝航线区 上版头/申精/加分/补分/许可编辑 专用帖[/color][/b][/tid] [tid=11828236][b][color=red][碧蓝航线]评分贴：战舰拟人的弹幕海战手游[/color][/b][/tid] [tid=11739344][b][color=red]&lt;碧蓝航线&gt;手机APP专用版头[/color][/b][/tid] </span></span>
+                        <script type="text/javascript">commonui.parseToppedTopic($('toppedtopic'))</script>
+                    </div>
+                </div>
+                <span></span>
+                <script type="text/javascript">ngaAds.bbs_ads9_gen()</script>
+                <span id="sub_forums_c"><a href="/thread.php?fid=746">皇家茶会 ()</a> <a
+                        href="/thread.php?fid=745">港区问询处 ()</a> <a href="/thread.php?stid=13749795">前方电报</a> <a
+                        href="/thread.php?stid=11709914">大舰队招募 (禁止宣传QQ/微信群)</a> <a href="/thread.php?stid=18337690">碧蓝航线Crosswave</a> </span>
+                <script>
+                    __SUB_SET = [, 13749795, 11709914, 18337690].join(',')
+                    __SUB_AND_UNION_FORUM = [, 746, 745].join(',')
+                    $('sub_forums_c').innerHTML = ''
+                    $('sub_forums_c').appendChild(commonui.selectForum.genSubForum())
+                </script>
+                <table cellspacing="1px" class="forumbox topicrowsnone" id="topicrows">
+                    <!--topicliststart-->
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37714391" id="t_rc1_0" target="_blank"
+                                          title="打开新窗口">72</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37714391" id="t_tt1_0">9.14 国服日服EN服 “须臾望月抄”限时活动
+                                新船集中下水/晒欧帖</a>
+                            <span id="t_pc1_0"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=34800395" id="t_ta1_0"
+                               title="用户ID 34800395">白求思丶</a><span class="silver postdate"
+                                                                   id="t_pt1_0">1694667178</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37714391&amp;page=e" id="t_rt1_0"></a><span
+                                class="replyer" id="t_tr1_0">微光葬歌</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_0', 't_tt1_0', 't_ta1_0', 't_pt1_0',
+                            't_tr1_0', 't_rt1_0', 't_pc1_0',
+                            '564', 37714391, '', '', '0', 1694667178, 1696434890, 72,
+                            64, 'AQAAACE', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37968128" id="t_rc1_1" target="_blank"
+                                          title="打开新窗口">3</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37968128" id="t_tt1_1">闪退啊闪退啊 为什么会闪退啊...</a>
+                            <span id="t_pc1_1"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=38851975" id="t_ta1_1"
+                               title="用户ID 38851975">古尔丹丶怒风</a><span class="silver postdate"
+                                                                     id="t_pt1_1">1696796186</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37968128&amp;page=e" id="t_rt1_1"></a><span
+                                class="replyer" id="t_tr1_1">⑨个饼干</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_1', 't_tt1_1', 't_ta1_1', 't_pt1_1',
+                            't_tr1_1', 't_rt1_1', 't_pc1_1',
+                            '564', 37968128, '', '', '0', 1696796186, 1696813244, 3,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37955604" id="t_rc1_2" target="_blank"
+                                          title="打开新窗口">27</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37955604" id="t_tt1_2">[AI] 圣路易斯</a>
+                            <span id="t_pc1_2"></span><span class="titleadd2"><a class="silver"
+                                                                                 href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=6203010" id="t_ta1_2"
+                               title="用户ID 6203010">时易</a><span class="silver postdate" id="t_pt1_2">1696687857</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37955604&amp;page=e" id="t_rt1_2"></a><span
+                                class="replyer" id="t_tr1_2">抽烟的指挥官</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_2', 't_tt1_2', 't_ta1_2', 't_pt1_2',
+                            't_tr1_2', 't_rt1_2', 't_pc1_2',
+                            '746', 37955604, '', '', '0', 1696687857, 1696813192, 27,
+                            8192, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37968791" id="t_rc1_3" target="_blank"
+                                          title="打开新窗口">1</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37968791" id="t_tt1_3">各位大佬问一下是所有彩船复刻都会送券抽45抽吗？</a>
+                            <span id="t_pc1_3"></span><span class="titleadd2"><a class="silver"
+                                                                                 href="/thread.php?fid=745">[港区问询处]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=65261695" id="t_ta1_3"
+                               title="用户ID 65261695">pnwrs</a><span class="silver postdate"
+                                                                    id="t_pt1_3">1696812945</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37968791&amp;page=e" id="t_rt1_3"></a><span
+                                class="replyer" id="t_tr1_3">zxcdsaqwe943</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_3', 't_tt1_3', 't_ta1_3', 't_pt1_3',
+                            't_tr1_3', 't_rt1_3', 't_pc1_3',
+                            '745', 37968791, '', '', '0', 1696812945, 1696813082, 1,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37965897" id="t_rc1_4" target="_blank"
+                                          title="打开新窗口">10</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37965897" id="t_tt1_4">今天是周日今天是周日今天是周日</a>
+                            <span id="t_pc1_4"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=63778405" id="t_ta1_4"
+                               title="用户ID 63778405">初代眯眯眼</a><span class="silver postdate"
+                                                                    id="t_pt1_4">1696772629</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37965897&amp;page=e" id="t_rt1_4"></a><span
+                                class="replyer" id="t_tr1_4">难酬蹈海亦英雄</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_4', 't_tt1_4', 't_ta1_4', 't_pt1_4',
+                            't_tr1_4', 't_rt1_4', 't_pc1_4',
+                            '564', 37965897, '', '', '0', 1696772629, 1696812795, 10,
+                            134225920, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37967657" id="t_rc1_6" target="_blank"
+                                          title="打开新窗口">9</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37967657" id="t_tt1_6">[谢谢茄子] 欧根啊，你怎么穿人云仙的泳装</a>
+                            <span id="t_pc1_6"></span><span class="titleadd2"><a class="silver"
+                                                                                 href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=42087916" id="t_ta1_6"
+                               title="用户ID 42087916">丶夜鹰之梦丶</a><span class="silver postdate"
+                                                                     id="t_pt1_6">1696784975</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37967657&amp;page=e" id="t_rt1_6"></a><span
+                                class="replyer" id="t_tr1_6">摇铃啊摇铃</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_6', 't_tt1_6', 't_ta1_6', 't_pt1_6',
+                            't_tr1_6', 't_rt1_6', 't_pc1_6',
+                            '746', 37967657, '', '', '0', 1696784975, 1696812311, 9,
+                            134225920, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37966288" id="t_rc1_7" target="_blank"
+                                          title="打开新窗口">13</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37966288" id="t_tt1_7">华贵的盛宴是谁啊？</a>
+                            <span id="t_pc1_7"></span><span class="titleadd2"><a class="silver"
+                                                                                 href="/thread.php?fid=745">[港区问询处]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=636478" id="t_ta1_7" title="用户ID 636478">wbahyq</a><span
+                                class="silver postdate" id="t_pt1_7">1696775396</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37966288&amp;page=e" id="t_rt1_7"></a><span
+                                class="replyer" id="t_tr1_7">Tetsunagare</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_7', 't_tt1_7', 't_ta1_7', 't_pt1_7',
+                            't_tr1_7', 't_rt1_7', 't_pc1_7',
+                            '745', 37966288, '', '', '0', 1696775396, 1696812310, 13,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37968236" id="t_rc1_8" target="_blank"
+                                          title="打开新窗口">3</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37968236" id="t_tt1_8">彩战列只有花园和大帝，大世界炮队选约克公爵还是尾张？</a>
+                            <span id="t_pc1_8"></span><span class="titleadd2"><a class="silver"
+                                                                                 href="/thread.php?fid=745">[港区问询处]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=40669785" id="t_ta1_8"
+                               title="用户ID 40669785">sdyzpjt</a><span class="silver postdate"
+                                                                      id="t_pt1_8">1696802904</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37968236&amp;page=e" id="t_rt1_8"></a><span
+                                class="replyer" id="t_tr1_8">摇铃啊摇铃</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_8', 't_tt1_8', 't_ta1_8', 't_pt1_8',
+                            't_tr1_8', 't_rt1_8', 't_pc1_8',
+                            '745', 37968236, '', '', '0', 1696802904, 1696812276, 3,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37957210" id="t_rc1_9" target="_blank"
+                                          title="打开新窗口">11</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37957210" id="t_tt1_9">主界面是不是变了</a>
+                            <span id="t_pc1_9"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=64443677" id="t_ta1_9"
+                               title="用户ID 64443677">luwubaby</a><span class="silver postdate"
+                                                                       id="t_pt1_9">1696699224</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37957210&amp;page=e" id="t_rt1_9"></a><span
+                                class="replyer" id="t_tr1_9">MIR。i</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_9', 't_tt1_9', 't_ta1_9', 't_pt1_9',
+                            't_tr1_9', 't_rt1_9', 't_pc1_9',
+                            '564', 37957210, '', '', '0', 1696699224, 1696811311, 11,
+                            8192, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37959218" id="t_rc1_10" target="_blank"
+                                          title="打开新窗口">68</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37959218" id="t_tt1_10">作为一名碧蓝世界观下的普通民众，他会如何看待港区呢</a>
+                            <span id="t_pc1_10"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=322453" id="t_ta1_10"
+                               title="用户ID 322453">枫叶の恋</a><span class="silver postdate" id="t_pt1_10">1696732607</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37959218&amp;page=e" id="t_rt1_10"></a><span
+                                class="replyer" id="t_tr1_10">kisslic</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_10', 't_tt1_10', 't_ta1_10', 't_pt1_10',
+                            't_tr1_10', 't_rt1_10', 't_pc1_10',
+                            '564', 37959218, '', '', '0', 1696732607, 1696811302, 68,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37954923" id="t_rc1_11" target="_blank"
+                                          title="打开新窗口">27</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37954923" id="t_tt1_11">誓约的手的肤色会随着舰船肤色变化啊</a>
+                            <span id="t_pc1_11"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=64754026" id="t_ta1_11"
+                               title="用户ID 64754026">爱偷天雷的屑柴郡</a><span class="silver postdate"
+                                                                       id="t_pt1_11">1696683564</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37954923&amp;page=e" id="t_rt1_11"></a><span
+                                class="replyer" id="t_tr1_11">SaekoRyo</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_11', 't_tt1_11', 't_ta1_11', 't_pt1_11',
+                            't_tr1_11', 't_rt1_11', 't_pc1_11',
+                            '564', 37954923, '', '', '0', 1696683564, 1696809493, 27,
+                            8192, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37965133" id="t_rc1_12" target="_blank"
+                                          title="打开新窗口">5</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37965133" id="t_tt1_12">[周边氵]OL伦敦眼镜架到货</a>
+                            <span id="t_pc1_12"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=61440545" id="t_ta1_12"
+                               title="用户ID 61440545">ノラ猫</a><span class="silver postdate"
+                                                                  id="t_pt1_12">1696767760</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37965133&amp;page=e" id="t_rt1_12"></a><span
+                                class="replyer" id="t_tr1_12">零YI25</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_12', 't_tt1_12', 't_ta1_12', 't_pt1_12',
+                            't_tr1_12', 't_rt1_12', 't_pc1_12',
+                            '746', 37965133, '', '', '0', 1696767760, 1696806516, 5,
+                            8192, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37957951" id="t_rc1_13" target="_blank"
+                                          title="打开新窗口">17</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37957951" id="t_tt1_13">120级老人AFK540天归来，怎么环境变化这么大</a>
+                            <span id="t_pc1_13"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=745">[港区问询处]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=24685162" id="t_ta1_13"
+                               title="用户ID 24685162">鲁登道夫上将</a><span class="silver postdate"
+                                                                     id="t_pt1_13">1696723221</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37957951&amp;page=e" id="t_rt1_13"></a><span
+                                class="replyer" id="t_tr1_13">緋天終焉</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_13', 't_tt1_13', 't_ta1_13', 't_pt1_13',
+                            't_tr1_13', 't_rt1_13', 't_pc1_13',
+                            '745', 37957951, '', '', '0', 1696723221, 1696806065, 17,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37944874" id="t_rc1_15" target="_blank"
+                                          title="打开新窗口">57</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37944874" id="t_tt1_15">[NGATOYS][新闻资讯] AniGame 1/6
+                                &lt;碧蓝航线&gt; 华甲 欢乐喜庆僵尸夜Ver.</a>
+                            <span id="t_pc1_15"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=38260890" id="t_ta1_15"
+                               title="用户ID 38260890">hcahcsroR</a><span class="silver postdate"
+                                                                        id="t_pt1_15">1696592791</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37944874&amp;page=e" id="t_rt1_15"></a><span
+                                class="replyer" id="t_tr1_15">冬178冬</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_15', 't_tt1_15', 't_ta1_15', 't_pt1_15',
+                            't_tr1_15', 't_rt1_15', 't_pc1_15',
+                            '746', 37945780, '', '', '37944874', 1696592791, 1696801103, 57,
+                            134225920, 'AQAAAAg', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37937024" id="t_rc1_16" target="_blank"
+                                          title="打开新窗口">102</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37937024" id="t_tt1_16">[破事氵]“哪有胸这么大的女人啊，哪有？”</a>
+                            <span id="t_pc1_16"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=24278093" id="t_ta1_16"
+                               title="用户ID 24278093">Just｜Monika</a><span class="silver postdate" id="t_pt1_16">1696512723</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37937024&amp;page=e" id="t_rt1_16"></a><span
+                                class="replyer" id="t_tr1_16">小草系</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_16', 't_tt1_16', 't_ta1_16', 't_pt1_16',
+                            't_tr1_16', 't_rt1_16', 't_pc1_16',
+                            '746', 37937024, '', '', '0', 1696512723, 1696788588, 102,
+                            134225920, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=13749795" id="t_rc1_17" target="_blank"
+                                          title="打开新窗口">0</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=13749795" id="t_tt1_17">前方电报</a>
+                            <span id="t_pc1_17"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=37864429" id="t_ta1_17"
+                               title="用户ID 37864429">西行寺汐汐子</a><span class="silver postdate"
+                                                                     id="t_pt1_17">1522298817</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=13749795&amp;page=e" id="t_rt1_17"></a><span
+                                class="replyer" id="t_tr1_17">西行寺汐汐子</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_17', 't_tt1_17', 't_ta1_17', 't_pt1_17',
+                            't_tr1_17', 't_rt1_17', 't_pc1_17',
+                            '564', 13749795, '', '', '0', 1522298817, 1696787650, 0,
+                            33920, 'AQAAACI', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37963800" id="t_rc1_18" target="_blank"
+                                          title="打开新窗口">16</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37963800" id="t_tt1_18">[国服相关] [前方电报]
+                                限时活动'复刻：华贵的盛宴'将于下次维护后登场！ </a>
+                            <span id="t_pc1_18"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?stid=13749795">[前方电报]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=43020493" id="t_ta1_18"
+                               title="用户ID 43020493">扶摇易</a><span class="silver postdate"
+                                                                  id="t_pt1_18">1696759300</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37963800&amp;page=e" id="t_rt1_18"></a><span
+                                class="replyer" id="t_tr1_18">hsyscq</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_18', 't_tt1_18', 't_ta1_18', 't_pt1_18',
+                            't_tr1_18', 't_rt1_18', 't_pc1_18',
+                            '564', 37963800, '', '', '0', 1696759300, 1696787650, 16,
+                            77824, 'AgDRziMBAAAAAg', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37876351" id="t_rc1_19" target="_blank"
+                                          title="打开新窗口">17</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37876351" id="t_tt1_19">[前方电报] [日服相关] U-410换装
+                                “リージャリイ.プラクティス”</a>
+                            <span id="t_pc1_19"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?stid=13749795">[前方电报]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=42580937" id="t_ta1_19"
+                               title="用户ID 42580937">jyoon2017</a><span class="silver postdate"
+                                                                        id="t_pt1_19">1695983687</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37876351&amp;page=e" id="t_rt1_19"></a><span
+                                class="replyer" id="t_tr1_19">yamino23</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_19', 't_tt1_19', 't_ta1_19', 't_pt1_19',
+                            't_tr1_19', 't_rt1_19', 't_pc1_19',
+                            '564', 37876351, '', '', '0', 1695983687, 1696772426, 17,
+                            73728, 'AgDRziMBAAAAAg', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37865405" id="t_rc1_20" target="_blank"
+                                          title="打开新窗口">25</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37865405" id="t_tt1_20">[国服相关] [前方电报]
+                                轻型航空母舰'普林斯顿·META'参上！ </a>
+                            <span id="t_pc1_20"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?stid=13749795">[前方电报]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=43020493" id="t_ta1_20"
+                               title="用户ID 43020493">扶摇易</a><span class="silver postdate"
+                                                                  id="t_pt1_20">1695896268</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37865405&amp;page=e" id="t_rt1_20"></a><span
+                                class="replyer" id="t_tr1_20">汐风的物语</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_20', 't_tt1_20', 't_ta1_20', 't_pt1_20',
+                            't_tr1_20', 't_rt1_20', 't_pc1_20',
+                            '564', 37865405, '', '', '0', 1695896268, 1696234113, 25,
+                            73728, 'AgDRziMBAAAAAg', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37800848" id="t_rc1_21" target="_blank"
+                                          title="打开新窗口">52</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37800848" id="t_tt1_21">[日服相关] [前方电报] 乌尔里希.冯.胡腾 换装
+                                “孤高のイグニッションタイム” #L2D#</a>
+                            <span id="t_pc1_21"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?stid=13749795">[前方电报]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=42580937" id="t_ta1_21"
+                               title="用户ID 42580937">jyoon2017</a><span class="silver postdate"
+                                                                        id="t_pt1_21">1695372704</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37800848&amp;page=e" id="t_rt1_21"></a><span
+                                class="replyer" id="t_tr1_21">枫茗</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_21', 't_tt1_21', 't_ta1_21', 't_pt1_21',
+                            't_tr1_21', 't_rt1_21', 't_pc1_21',
+                            '564', 37800848, '', '', '0', 1695372704, 1696065321, 52,
+                            73728, 'AgDRziMBAAAAAg', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37943798" id="t_rc1_22" target="_blank"
+                                          title="打开新窗口">24</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37943798" id="t_tt1_22">[破事氵]明天去访问铁血</a>
+                            <span id="t_pc1_22"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=64568250" id="t_ta1_22"
+                               title="用户ID 64568250">梅森芒狗</a><span class="silver postdate"
+                                                                   id="t_pt1_22">1696584856</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37943798&amp;page=e" id="t_rt1_22"></a><span
+                                class="replyer" id="t_tr1_22">梅森芒狗</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_22', 't_tt1_22', 't_ta1_22', 't_pt1_22',
+                            't_tr1_22', 't_rt1_22', 't_pc1_22',
+                            '746', 37943798, '', '', '0', 1696584856, 1696786816, 24,
+                            8192, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37956267" id="t_rc1_23" target="_blank"
+                                          title="打开新窗口">9</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37956267" id="t_tt1_23">[谢谢茄子] 泳装大凤</a>
+                            <span id="t_pc1_23"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=42087916" id="t_ta1_23"
+                               title="用户ID 42087916">丶夜鹰之梦丶</a><span class="silver postdate"
+                                                                     id="t_pt1_23">1696691930</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37956267&amp;page=e" id="t_rt1_23"></a><span
+                                class="replyer" id="t_tr1_23">luwubaby</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_23', 't_tt1_23', 't_ta1_23', 't_pt1_23',
+                            't_tr1_23', 't_rt1_23', 't_pc1_23',
+                            '746', 37956267, '', '', '0', 1696691930, 1696785048, 9,
+                            134225920, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37966982" id="t_rc1_24" target="_blank"
+                                          title="打开新窗口">5</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37966982" id="t_tt1_24">又因为漏打没上2600</a>
+                            <span id="t_pc1_24"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=42918837" id="t_ta1_24"
+                               title="用户ID 42918837">盛世の繁华</a><span class="silver postdate"
+                                                                    id="t_pt1_24">1696779574</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37966982&amp;page=e" id="t_rt1_24"></a><span
+                                class="replyer" id="t_tr1_24">可是为什么呢</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_24', 't_tt1_24', 't_ta1_24', 't_pt1_24',
+                            't_tr1_24', 't_rt1_24', 't_pc1_24',
+                            '564', 37966982, '', '', '0', 1696779574, 1696784836, 5,
+                            8192, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37967086" id="t_rc1_25" target="_blank"
+                                          title="打开新窗口">1</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37967086" id="t_tt1_25">[闲聊氵]关于碧蓝航线世界的普通人</a>
+                            <span id="t_pc1_25"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=41176993" id="t_ta1_25"
+                               title="用户ID 41176993">AC丿NTEP</a><span class="silver postdate"
+                                                                      id="t_pt1_25">1696780303</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37967086&amp;page=e" id="t_rt1_25"></a><span
+                                class="replyer" id="t_tr1_25">Axios白泽</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_25', 't_tt1_25', 't_ta1_25', 't_pt1_25',
+                            't_tr1_25', 't_rt1_25', 't_pc1_25',
+                            '746', 37967086, '', '', '0', 1696780303, 1696784470, 1,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37967478" id="t_rc1_26" target="_blank"
+                                          title="打开新窗口">2</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37967478" id="t_tt1_26">好希望波特彩能够出婚皮</a>
+                            <span id="t_pc1_26"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=62599905" id="t_ta1_26"
+                               title="用户ID 62599905">煌茗</a><span class="silver postdate" id="t_pt1_26">1696783480</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37967478&amp;page=e" id="t_rt1_26"></a><span
+                                class="replyer" id="t_tr1_26">Ryza_Warmongers</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_26', 't_tt1_26', 't_ta1_26', 't_pt1_26',
+                            't_tr1_26', 't_rt1_26', 't_pc1_26',
+                            '564', 37967478, '', '', '0', 1696783480, 1696783693, 2,
+                            8224, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37954774" id="t_rc1_27" target="_blank"
+                                          title="打开新窗口">29</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37954774" id="t_tt1_27">大世界有什么刷体力或省体力的方法吗？</a>
+                            <span id="t_pc1_27"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=745">[港区问询处]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=64356298" id="t_ta1_27"
+                               title="用户ID 64356298">新之蛙</a><span class="silver postdate"
+                                                                  id="t_pt1_27">1696682445</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37954774&amp;page=e" id="t_rt1_27"></a><span
+                                class="replyer" id="t_tr1_27">胡子才是本体</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_27', 't_tt1_27', 't_ta1_27', 't_pt1_27',
+                            't_tr1_27', 't_rt1_27', 't_pc1_27',
+                            '745', 37954774, '', '', '0', 1696682445, 1696783117, 29,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=11709914" id="t_rc1_28" target="_blank"
+                                          title="打开新窗口">293</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=11709914" id="t_tt1_28">大舰队招募 (禁止宣传QQ/微信群)</a>
+                            <span id="t_pc1_28"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=6548667" id="t_ta1_28"
+                               title="用户ID 6548667">yeshanglcx</a><span class="silver postdate"
+                                                                        id="t_pt1_28">1495950802</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=11709914&amp;page=e" id="t_rt1_28"></a><span
+                                class="replyer" id="t_tr1_28">yeshanglcx</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_28', 't_tt1_28', 't_ta1_28', 't_pt1_28',
+                            't_tr1_28', 't_rt1_28', 't_pc1_28',
+                            '564', 11709914, '', '', '0', 1495950802, 1696782795, 293,
+                            33792, 'AQAAACE', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=36386060" id="t_rc1_29" target="_blank"
+                                          title="打开新窗口">171</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=36386060"
+                               id="t_tt1_29">北极光计划萌新休闲养老舰队招人啦(北极光初始入坑看过来)</a>
+                            <span id="t_pc1_29"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?stid=11709914">[大舰队招募 (禁止宣传QQ/微信群)]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=62593385" id="t_ta1_29"
+                               title="用户ID 62593385">曲某君</a><span class="silver postdate"
+                                                                  id="t_pt1_29">1684830969</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=36386060&amp;page=e" id="t_rt1_29"></a><span
+                                class="replyer" id="t_tr1_29">曲某君</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_29', 't_tt1_29', 't_ta1_29', 't_pt1_29',
+                            't_tr1_29', 't_rt1_29', 't_pc1_29',
+                            '564', 36386060, '', '', '0', 1684830969, 1696782795, 171,
+                            73856, 'AgCyrdo', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37244102" id="t_rc1_30" target="_blank"
+                                          title="打开新窗口">5</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37244102" id="t_tt1_30">[安卓B服][瞭望台行动]十级大舰队，469762709，欢迎广大萌新dalao加入～</a>
+                            <span id="t_pc1_30"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?stid=11709914">[大舰队招募 (禁止宣传QQ/微信群)]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=43051864" id="t_ta1_30"
+                               title="用户ID 43051864">路过的橘猫</a><span class="silver postdate"
+                                                                    id="t_pt1_30">1691048087</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37244102&amp;page=e" id="t_rt1_30"></a><span
+                                class="replyer" id="t_tr1_30">路过的橘猫</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_30', 't_tt1_30', 't_ta1_30', 't_pt1_30',
+                            't_tr1_30', 't_rt1_30', 't_pc1_30',
+                            '564', 37244102, '', '', '0', 1691048087, 1696781929, 5,
+                            73728, 'AgCyrdo', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37966030" id="t_rc1_31" target="_blank"
+                                          title="打开新窗口">0</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37966030" id="t_tt1_31">[大舰队招募]IOS冲绳岛十级舰队 游戏人生</a>
+                            <span id="t_pc1_31"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?stid=11709914">[大舰队招募 (禁止宣传QQ/微信群)]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=65242141" id="t_ta1_31"
+                               title="用户ID 65242141">zhilaoban</a><span class="silver postdate"
+                                                                        id="t_pt1_31">1696773604</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37966030&amp;page=e" id="t_rt1_31"></a><span
+                                class="replyer" id="t_tr1_31">zhilaoban</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_31', 't_tt1_31', 't_ta1_31', 't_pt1_31',
+                            't_tr1_31', 't_rt1_31', 't_pc1_31',
+                            '564', 37966030, '', '', '0', 1696773604, 1696773604, 0,
+                            73728, 'AgCyrdo', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=36746054" id="t_rc1_32" target="_blank"
+                                          title="打开新窗口">31</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=36746054" id="t_tt1_32">[大舰队招募] 冲绳岛 10级休闲舰队 无要求收人</a>
+                            <span id="t_pc1_32"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?stid=11709914">[大舰队招募 (禁止宣传QQ/微信群)]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=133636" id="t_ta1_32"
+                               title="用户ID 133636">kennede</a><span class="silver postdate"
+                                                                    id="t_pt1_32">1687416279</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=36746054&amp;page=e" id="t_rt1_32"></a><span
+                                class="replyer" id="t_tr1_32">kennede</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_32', 't_tt1_32', 't_ta1_32', 't_pt1_32',
+                            't_tr1_32', 't_rt1_32', 't_pc1_32',
+                            '564', 36746054, '', '', '0', 1687416279, 1696771529, 31,
+                            73728, 'AgCyrdo', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37934607" id="t_rc1_33" target="_blank"
+                                          title="打开新窗口">21</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37934607" id="t_tt1_33">[分享] 《在办公室等待指挥官的她们·其四》[让巴尔&amp;黎塞留][同人文]</a>
+                            <span id="t_pc1_33"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=61335957" id="t_ta1_33"
+                               title="用户ID 61335957">夏日颜妍</a><span class="silver postdate"
+                                                                   id="t_pt1_33">1696495236</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37934607&amp;page=e" id="t_rt1_33"></a><span
+                                class="replyer" id="t_tr1_33">waterbridge</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_33', 't_tt1_33', 't_ta1_33', 't_pt1_33',
+                            't_tr1_33', 't_rt1_33', 't_pc1_33',
+                            '746', 37934607, '', '', '0', 1696495236, 1696781509, 21,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37966612" id="t_rc1_34" target="_blank"
+                                          title="打开新窗口">4</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37966612" id="t_tt1_34">[提问] 下一个彩改练谁，求大佬意见</a>
+                            <span id="t_pc1_34"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=745">[港区问询处]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=61371493" id="t_ta1_34"
+                               title="用户ID 61371493">纵使漫天繁星</a><span class="silver postdate"
+                                                                     id="t_pt1_34">1696777356</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37966612&amp;page=e" id="t_rt1_34"></a><span
+                                class="replyer" id="t_tr1_34">纵使漫天繁星</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_34', 't_tt1_34', 't_ta1_34', 't_pt1_34',
+                            't_tr1_34', 't_rt1_34', 't_pc1_34',
+                            '745', 37966612, '', '', '0', 1696777356, 1696781391, 4,
+                            134225920, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37958688" id="t_rc1_35" target="_blank"
+                                          title="打开新窗口">1</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37958688" id="t_tt1_35">摸鱼摸了几个月，终于全图鉴</a>
+                            <span id="t_pc1_35"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=42120214" id="t_ta1_35"
+                               title="用户ID 42120214">吾神风待葬</a><span class="silver postdate"
+                                                                    id="t_pt1_35">1696729593</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37958688&amp;page=e" id="t_rt1_35"></a><span
+                                class="replyer" id="t_tr1_35">奈奈超可爱</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_35', 't_tt1_35', 't_ta1_35', 't_pt1_35',
+                            't_tr1_35', 't_rt1_35', 't_pc1_35',
+                            '564', 37958688, '', '', '0', 1696729593, 1696778586, 1,
+                            8192, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=35634772" id="t_rc1_36" target="_blank"
+                                          title="打开新窗口">182</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=35634772" id="t_tt1_36">自制卡牌 2023-07-16
+                                已更新！(102楼有网友打印效果图)</a>
+                            <span id="t_pc1_36"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=63039900" id="t_ta1_36"
+                               title="用户ID 63039900">陆璃i</a><span class="silver postdate"
+                                                                  id="t_pt1_36">1678538341</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=35634772&amp;page=e" id="t_rt1_36"></a><span
+                                class="replyer" id="t_tr1_36">陆璃i</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_36', 't_tt1_36', 't_ta1_36', 't_pt1_36',
+                            't_tr1_36', 't_rt1_36', 't_pc1_36',
+                            '746', 35634772, '', '', '0', 1678538341, 1696778567, 182,
+                            8320, 'AQAAAAg', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37959992" id="t_rc1_37" target="_blank"
+                                          title="打开新窗口">29</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37959992" id="t_tt1_37">今天似乎还没什么电报嘛</a>
+                            <span id="t_pc1_37"></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=19224956" id="t_ta1_37"
+                               title="用户ID 19224956">雪珈蓝</a><span class="silver postdate"
+                                                                  id="t_pt1_37">1696736418</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37959992&amp;page=e" id="t_rt1_37"></a><span
+                                class="replyer" id="t_tr1_37">奈奈超可爱</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_37', 't_tt1_37', 't_ta1_37', 't_pt1_37',
+                            't_tr1_37', 't_rt1_37', 't_pc1_37',
+                            '564', 37959992, '', '', '0', 1696736418, 1696778522, 29,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37966500" id="t_rc1_38" target="_blank"
+                                          title="打开新窗口">3</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37966500" id="t_tt1_38">彩研发图纸每月稳定来源有几个?</a>
+                            <span id="t_pc1_38"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=745">[港区问询处]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=60180669" id="t_ta1_38"
+                               title="用户ID 60180669">艾诺迪尔</a><span class="silver postdate"
+                                                                   id="t_pt1_38">1696776702</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37966500&amp;page=e" id="t_rt1_38"></a><span
+                                class="replyer" id="t_tr1_38">艾诺迪尔</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_38', 't_tt1_38', 't_ta1_38', 't_pt1_38',
+                            't_tr1_38', 't_rt1_38', 't_pc1_38',
+                            '745', 37966500, '', '', '0', 1696776702, 1696778502, 3,
+                            0, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37965121" id="t_rc1_39" target="_blank"
+                                          title="打开新窗口">7</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37965121" id="t_tt1_39">maydaymaydaymayday，好哥哥们救一下</a>
+                            <span id="t_pc1_39"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=745">[港区问询处]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=64416739" id="t_ta1_39"
+                               title="用户ID 64416739">Lotacroya</a><span class="silver postdate"
+                                                                        id="t_pt1_39">1696767678</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37965121&amp;page=e" id="t_rt1_39"></a><span
+                                class="replyer" id="t_tr1_39">Lotacroya</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_39', 't_tt1_39', 't_ta1_39', 't_pt1_39',
+                            't_tr1_39', 't_rt1_39', 't_pc1_39',
+                            '745', 37965121, '', '', '0', 1696767678, 1696778395, 7,
+                            134225920, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row1 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37896201" id="t_rc1_40" target="_blank"
+                                          title="打开新窗口">37</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37896201" id="t_tt1_40">笑死了哈哈哈哈，还有这种图吗</a>
+                            <span id="t_pc1_40"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=61739278" id="t_ta1_40"
+                               title="用户ID 61739278">赵宛夕</a><span class="silver postdate"
+                                                                  id="t_pt1_40">1696152699</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37896201&amp;page=e" id="t_rt1_40"></a><span
+                                class="replyer" id="t_tr1_40">国电36计</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_40', 't_tt1_40', 't_ta1_40', 't_pt1_40',
+                            't_tr1_40', 't_rt1_40', 't_pc1_40',
+                            '746', 37896201, '', '', '0', 1696152699, 1696777794, 37,
+                            8192, '', '',
+                            null, '', null, ''
+                        )</script>
+                    <tbody>
+                    <tr class="row2 topicrow">
+                        <td class="c1"><a class="replies" href="/read.php?tid=37915572" id="t_rc1_41" target="_blank"
+                                          title="打开新窗口">9</a></td>
+                        <td class="c2">
+                            <a class="topic" href="/read.php?tid=37915572" id="t_tt1_41">[迟来的中秋摸鱼]试着画了一下中秋贺图</a>
+                            <span id="t_pc1_41"></span><span class="titleadd2"><a class="silver"
+                                                                                  href="/thread.php?fid=746">[皇家茶会]</a></span>
+                        </td>
+                        <td class="c3">
+                            <a class="author" href="/nuke.php?func=ucp&amp;uid=61074243" id="t_ta1_41"
+                               title="用户ID 61074243">zombine707</a><span class="silver postdate" id="t_pt1_41">1696316397</span>
+                        </td>
+                        <td class="c4">
+                            <a class="silver replydate" href="/read.php?tid=37915572&amp;page=e" id="t_rt1_41"></a><span
+                                class="replyer" id="t_tr1_41">zombine707</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <script type="text/javascript">
+                        commonui.topicArg.add(
+                            't_rc1_41', 't_tt1_41', 't_ta1_41', 't_pt1_41',
+                            't_tr1_41', 't_rt1_41', 't_pc1_41',
+                            '746', 37915572, '', '', '0', 1696316397, 1696400630, 9,
+                            8192, 'AQAAAAg', '',
+                            null, '', null, ''
+                        )</script>
+                    <!--topiclistend-->
+                </table>
+                <script type="text/javascript">//topicloadallstart
+                commonui.topicArg.loadAll()
+                //topicloadallend
+                </script>
+            </div>
+        </div>
+        <div class="module_wrap" id="m_pbtnbtm">
+            <div class="w100">
+                <div class="right_"><a href="/post.php?fid=564" name="forumBtnScript"
+                                       onclick="if(window.postfunc &amp;&amp; postfunc.addForumSelect)return postfunc.addForumSelect(event)">发表新贴</a>
+                    <script type="text/javascript">commonui.forumBtns.load(document.getElementsByName('forumBtnScript')[0].parentNode, 1, __CURRENT_FID)</script>
+                </div>
+                <div class="left" id="pagebbtm" name="pageball"><a class="pager_spacer"
+                                                                   href="/thread.php?fid=564&amp;page=2" title="下一页">下一页(2)</a><span
+                        class="x" id="pageBtnHere"></span>
+                    <script>var __PAGE = {0: '/thread.php?fid=564', 1: 7511, 2: 1, 3: 20};
+                    commonui.pageBtn(document.getElementById('pageBtnHere').parentNode, __PAGE, true)</script>
+                </div>
+                <div class="clear"></div>
+                <script type="text/javascript">
+                    var tmp = $('pagebbtm').previousSibling
+                    if (tmp) {
+                        commonui.forumBtns.load(tmp, 1, __CURRENT_FID)
+                        commonui.pageBtnAdjHeight(tmp.parentNode, tmp)
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="module_wrap" id="m_fopts">
+            <div class="w100"></div>
+        </div>
+        <div class="module_wrap" id="b_nav">
+            <div class="nav"><a class="nav_root" href="/">NGA玩家社区</a><span class="nav_spr">»</span><a class="nav_link"
+                                                                                                      data-fb="167772480"
+                                                                                                      href="/thread.php?fid=428">手机
+                网页游戏综合讨论</a><span class="nav_spr">»</span>
+                <h1><a class="nav_link" data-fb="167772360" href="/thread.php?fid=564">碧蓝航线</a></h1>
+                <div class="clear"></div>
+            </div>
+            <span id="more_sub_forums_c"></span>
+        </div>
+        <span id="fast_post_c"></span><span></span>
+        <script type="text/javascript">
+            commonui.advNav($('b_nav'))
+            if (commonui.selectForum.genMoreSub && (tmp = commonui.selectForum.genMoreSub())) $('more_sub_forums_c').appendChild(tmp)
+            ngaAds.bbs_ads14_gen()
+            if (commonui.fastPostUi) commonui.fastPostUi(564)
+        </script>
+        <br class="clear"/>
+        <br/>
+        <br/>
+        <script>//everypage
+
+        if ('serviceWorker' in navigator && __SCRIPTS.service && __GP.admin) {
+            navigator.serviceWorker.ready.then(function (reg) {
+                window.__SERVER_WORKER = reg.active
+            })
+            navigator.serviceWorker.register(__SCRIPTS.service, {scope: '/'}).then(function (reg) {
+                console.log('serviceWorker reg ' + __SCRIPTS.service)
+            })
+        }
+
+        add_pv_count('01c4614f24e14020e036f4c3597aa059')
+
+        </script>
+        <script>//everypage
+        if (ngaAds && ngaAds.syncAfterload) ngaAds.syncAfterload()
+        if (window.__FORUM_JUMP_TMP) {
+            commonui.alert(__FORUM_JUMP_TMP);
+            __FORUM_JUMP_TMP = ''
+        }
+        </script>
+        <div class="cpinfo" id="footer">
+            <div class="xtxt silver">商务市场合作: BD@infinities.com.cn , 内容合作: wangchuang@infinities.com.cn / QQ 972310705 ,
+                违法和不良信息举报电话: 010-60845018 邮箱: jubao@infinities.com.cn <a href="https://www.12377.cn">网上有害信息举报专区</a><br/><a
+                        href="http://beian.miit.gov.cn">京ICP备16021487号-7</a> <a
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=京公网安备11010802027588号">京公网安备11010802027588号</a>
+                <a href="http://www.anquan.org" key="5652d13cefbfb049451503f9" logo_size="32x12" logo_type=""
+                   style="display:none">
+                    <script>//document.write('<scr'+'ipt src="'+location.protocol+'//static.anquan.org/static/outer/js/aq_auth.js" type="text/javasc'+'ript"></scr'+'ipt>')</script>
+                </a>
+                <span style="display:inline-block;vertical-align:middle;"><script>document.write('<scr' + 'ipt src="' + location.protocol + '//kxlogo.knet.cn/seallogo.dll?sn=e18122811010876513vpap000000&size=1" type="text/javasc' + 'ript"></scr' + 'ipt>')</script></span>
+            </div>
+            <br/>
+        </div>
+    </div>
+</div>
+<script>
+    if (commonui.loadUserScript)
+        commonui.loadUserScript()
+    commonui.triggerEventDOMContentLoadedAct()
+</script>
+</body>
+</html>

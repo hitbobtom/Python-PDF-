@@ -1,0 +1,21 @@
+Pyinstaller
+
+pip install Pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+
+pyi-makespec main.py
+pyinstaller -F -w main.spec
+pyinstaller -D main.spec
+
+
+console = True
+改为：
+console = False
+
+
+pyinstaller --onefile 01_image_list.py 02_image_index.py
+
+网址：
+https://blog.csdn.net/cliffordl/article/details/138065845
+https://blog.csdn.net/qq_40597070/article/details/130919514
+https://blog.csdn.net/ilovestudy2/article/details/138139064
+https://blog.csdn.net/m0_56604317/article/details/139812978?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-139812978-blog-138139064.235%5Ev43%5Econtrol&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-139812978-blog-138139064.235%5Ev43%5Econtrol&utm_relevant_index=2

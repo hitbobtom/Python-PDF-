@@ -1,0 +1,12 @@
+<div class="item">
+    <div class="frame">
+        <a target="_blank" href="./img/07.jpg">
+            <div class="box front">
+                <!--<h1>2014</h1>-->
+                <span>-love letter and chocolate-</span>
+            </div>
+        </a>
+        <div class="box left"></div>
+        <div class="box right"></div>
+    </div>
+</div>

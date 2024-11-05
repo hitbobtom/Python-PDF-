@@ -1,0 +1,18 @@
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #000000; /* 设置边框大小，颜色和样式 */
+    border-radius: 10px; /* 设置边框圆角半径 */
+    box-shadow: 2px 2px 5px #888;
+    /* 设置边框阴影，包括水平、垂直、模糊程度和阴影颜色 */
+}
+
+/*<div class="images"><img src=""/></div>*/
+.images img {
+    width: 75%;
+    margin: 1.5em 0;
+    border: 1px solid #000;
+}
+

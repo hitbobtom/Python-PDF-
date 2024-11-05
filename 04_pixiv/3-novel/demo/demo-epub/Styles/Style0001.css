@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/* Global Setting */
+
+/* 0 CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1 默认格式 */
+
+/* 1.1 标题格式 */
+
+h1 {
+    /*章节标题1，较大字号*/
+    color: #000000;
+    line-height: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 1em 0 1em 0;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    border-style: none solid none solid;
+    border-width: 0 10px 0 10px;
+    border-color: #800080;
+}
+
+h2 {
+    /*章节标题2，较小字号*/
+    color: #808000;
+    line-height: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin: 1em 0 1em 0;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+}
+
+h3 {
+    /*建议二级标题用*/
+    color: #0000FF;
+    line-height: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 1em 0 1em 0;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+}
+
+/* 1.2 段落格式 */
+
+p {
+    /*首行缩进*/
+    text-indent: 2em;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+p {
+    /*文本间距*/
+    line-height: 1.4em;
+    margin: 0.5em 0
+}
+
+/* 1.3 图片格式 */
+
+/* Wrap */
+.wrap {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+/* Images */
+.images img {
+    width: 100%;
+}
+
+.color .images {
+    margin: 0 0 1.5em;
+}
+
+.article .images {
+    margin: 1.5em 0;
+    border: 1px solid #000;
+}
+
+/* 1.4 正文格式 */
+
+.bold {
+    font-weight: bold;
+}
+
+.hr {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/* 1.4 制作信息格式 */
+/* 1.5目录相关*/
+
+
+/* 2 文本格式相关1-宽度、字号与浮动 */
+
+/* 2.1 字号大小 */
+/* 2.2 宽度相关 */
+
+/* 2.3 浮动相关 */
+
+.right {
+    /*居右*/
+    text-indent: 0;
+    text-align: right;
+}
+
+.left {
+    /*居左*/
+    text-indent: 0;
+    text-align: left;
+}
+
+.center {
+    /*居中*/
+    text-indent: 0;
+    text-align: center;
+}
+
+.fl {
+    /*左浮动*/
+    float: left;
+}
+
+.fr {
+    /*右浮动*/
+    float: right;
+}
+
+.cl {
+    /*在左侧不允许浮动元素。*/
+    clear: left;
+}
+
+.cr {
+    /*在右侧不允许浮动元素。*/
+    clear: right;
+}
+
+.cb {
+    /*在左右两侧均不允许浮动元素*/
+    clear: both;
+}
+
+/* 4 个人模板添加 */
+
+/*目录背景*/
+
+.bg {
+    background-image: url(../Images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+}
+
+.bg1 {
+    background-color: #FCEBF3;
+}
+
+.bg2 {
+    background-color: #FFF;
+}
+
+.bg3 {
+    background-color: #CDDEC2;
+}
