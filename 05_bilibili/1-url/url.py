@@ -29,9 +29,34 @@ def remove_characters_after_question_mark(s):
         return s
 
 
-def add_url(baseUrl, originPath, dealPath):
-    f1 = open(originPath, encoding='utf-8')
-    f2 = open(dealPath, 'w', encoding='utf-8')
+def my_replace(s, old, new, max_replacements=-1):
+    # 使用切片来分割字符串，并在需要的地方插入新的子串
+    result = s[:]
+    start = 0
+    count = 0
+    while True:
+        # 查找旧子串的下一个出现位置
+        start = result.find(old, start)
+        if start == -1:  # 如果找不到更多的旧子串，则退出循环
+            break
+        count += 1
+        if max_replacements != -1 and count > max_replacements:
+            break  # 如果已经替换了足够的次数，则退出循环
+        if start != 0:
+            char = result[start - 1]
+            if char != ' ':
+                start += len(new)
+                continue
+        # 使用新子串替换旧子串
+        result = result[:start] + new + result[start + len(old):]
+        start += len(new)  # 更新搜索的起始位置
+    return result
+
+
+def add_url(baseUrl, input_path, output_path, md_path):
+    f1 = open(input_path, encoding='utf-8')
+    f2 = open(output_path, 'w', encoding='utf-8')
+    f3 = open(md_path, 'w', encoding='utf-8')
 
     # 利用循环全部读出
     while 1 > 0:
@@ -39,7 +64,7 @@ def add_url(baseUrl, originPath, dealPath):
         if line == "":
             break
 
-        # 1.若该行为链接，则更新当前的baseurl
+        # 1.若为链接，则更新当前的baseurl
         findUrl = re.compile(r'https://www.bilibili.com')
         list = re.findall(findUrl, line)
         if (len(list) != 0):
@@ -51,49 +76,49 @@ def add_url(baseUrl, originPath, dealPath):
         f2.write(line.strip() + '\n')
 
         # 2.若存在链接，则进行转换，并写入f2文件中
-        findTimegap = re.compile(r'\d\d:\d\d')
+        findTimegap = re.compile(r'(\d+#)?(\d+:)?(\d+:\d+)')
         list = re.findall(findTimegap, line)
         url_list = []
         if (len(list) != 0):
-            # 2.1 替换掉所有的括号
-            line = str(line).replace(')', '')
-            line = str(line).replace('(', ' ').replace('~', ' ')
-            line = str(line).replace('\n', '').replace('\t', ' ')
-
-            list = line.split(' ')
-            # 2.2 按空格进行分割，如果有时间戳则进行转换
             for i in range(0, len(list)):
-                result = list[i]
-                temp1 = re.findall(findTimegap, result)
-                if (len(temp1) != 0):  # 带有时间戳
-                    findSharp = re.compile(r'#')
-                    temp2 = re.findall(findSharp, result)
-                    if (len(temp2) != 0):  # 带有#号 30#00:28
-                        list1 = result.split('#')
-                        pages = list1[0]
-                        timestamp = list1[len(list1) - 1]
-                        seconds = deal_timestamp(timestamp)
-                        url = baseUrl + '/?p=' + pages + '&t=' + str(seconds)
-                    else:  # 不带#号 1:51:43
-                        seconds = deal_timestamp(result)
-                        url = baseUrl + '/?t=' + str(seconds)
-                    url_list.append(url)
-                else:  # 文字或者其他
-                    continue
-        # 3.写出url
-        if (len(url_list) != 0):
+                turtle = list[i]
+                pages = str(turtle[0]).replace('#', '')
+                hour = str(turtle[1])
+                minute_second = str(turtle[2])
+                timestamp = hour + minute_second
+                if len(pages) != 0:
+                    # 带有#号 30#00:28
+                    seconds = deal_timestamp(timestamp)
+                    url = baseUrl + '/?p=' + pages + '&t=' + str(seconds)
+                else:
+                    # 不带#号 1:51:43
+                    seconds = deal_timestamp(timestamp)
+                    url = baseUrl + '/?t=' + str(seconds)
+                url_list.append(url)
+            # 3.写出url
             for i in range(0, len(url_list)):
                 url = url_list[i]
                 f2.write(url + '\n')
+            # 4.写出md
+            for i in range(0, len(list)):
+                url = url_list[i]
+                turtle = list[i]
+                timestamp = turtle[0] + turtle[1] + turtle[2]
+                new_timestamp = '[' + timestamp + ']' + '(' + url + ')'
+                line = my_replace(line, timestamp, new_timestamp)
+
+        f3.write(line.strip() + '\n\n')
 
     f1.close()
     f2.close()
+    f3.close()
 
 
 if __name__ == "__main__":
     baseUrl = 'https://www.bilibili.com/video/BV1vd4y1J7Ey'
 
-    originPath = pathPrefix + "\\" + "input.txt"
-    dealPath = pathPrefix + "\\" + "output.txt"
+    input_path = os.path.join(pathPrefix, "input.txt")
+    output_path = os.path.join(pathPrefix, "output.txt")
+    md_path = r'C:\Users\qtf\Desktop\04_code\python\python-pdf\README.md'
 
-    add_url(baseUrl, originPath, dealPath)
+    add_url(baseUrl, input_path, output_path, md_path)

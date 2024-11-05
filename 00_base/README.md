@@ -14,6 +14,9 @@
 ### 3.加粗
 __This license helps keep.__
 
+### 4.字体颜色
+This is a <span style="color: #ef5fa8; font-weight: bold;">red and bold</span> text.
+
 ### 4.代码
 Create a `db.json` or `db.json5` file
 
@@ -78,6 +81,5 @@ Toolbox | .NET |
 WPF | .NET |
 Web | .NET|
 Cli | .NET |
-
 
 
